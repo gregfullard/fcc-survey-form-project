@@ -2,48 +2,71 @@
 <html>
     <head>
         <title>FCC Survey Form</title>
+        <meta charset="UTF-8" />
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" href="../styles/style.css" />
     </head>
     <body>
-        <h1 id="title">COVID-19 Questionnaire</h1>
-        <p id="description">This is a survey form to determine your risk level w.r.t COVID-19</p>
+        <header>
 
-        <form id="survey-form">
-            <label id="name-label" for="name" >Name</label>
-            <input type="text" id="name" placeholder="Type your full name here" required />
-            <br />
-            <label id="email-label" for="email" >Email</label>
-            <input type="email" id="email" placeholder="Your home email address" required/>
-            <br />
-            <label id="number-label" for="number" >Days in isolation</label>
-            <input type="number" id="number" placeholder="Number of days in isolation so far" min=0 max=100 required/>
-            <br />
-            <label id="dropdown-label" for="dropdown" >What is the best category for your job?</label>
-            <select id="dropdown">
-                <option value="medical">Medical</option>
-                <option value="technology">Technology</option>
-                <option value="admin">Administration</option>
-                <option value="sales">Sales</option>
-            </select>
-            <br />
-            <input type="radio" id="genz" name="age-group" value="GenZ">
-            <label for="genz">GenZ</label><br>
-            <input type="radio" id="millenial" name="age-group" value="Millenial">
-            <label for="millenial">Millenial</label><br>
-            <input type="radio" id="genx" name="age-group" value="GenX">
-            <label for="genx">GenX</label><br>
-            <input type="radio" id="boomer" name="age-group" value="Boomer">
-            <label for="boomer">Boomer</label><br>
-            <label for="travelled">Recent Foreign Travel?</label>
-            <input type="checkbox" id="travelled" value=false />
-            <br>
-            <label for="direct-contact">Have you had contact with anybody known to be positive for COVID-19?</label>
-            <input type="checkbox" id="direct-contact" value=false />
-            <br>            
-            <label for="additional-info">Please provide any additional information that you may deem important</label><br />
-            <textarea id="additional-info" rows="5"></textarea><br />
-            <input type="submit" id="submit" value="Click here to submit" />
-        </form>
+        </header>
+
+        <main>
+            <form id="survey-form" class="form">
+                <h1 id="title" class="form-title">COVID-19 Questionnaire</h1>
+                <p id="description" class="form-introduction">This is a survey form to determine your risk level w.r.t COVID-19</p>
+                <div class=field>
+                    <label id="name-label" for="name" >Name</label>
+                    <input type="text" id="name" class="standard-input" placeholder="Type your full name here" required />
+                </div>
+                <div class=field>
+                    <label id="email-label" for="email" >Email</label>
+                    <input type="email" id="email" class="standard-input" placeholder="Your home email address" required/>
+                </div>
+                <div class=field>
+                    <label id="number-label" for="number" >Days in isolation</label>
+                    <input type="number" id="number" class="standard-input" placeholder="Number of days in isolation so far" min=0 max=100 required/>
+                </div>
+                <div class=field>
+                    <label id="dropdown-label" for="dropdown" >What is the best category for your job?</label>
+                    <select id="dropdown">
+                        <option value="medical">Medical</option>
+                        <option value="technology">Technology</option>
+                        <option value="admin">Administration</option>
+                        <option value="sales">Sales</option>
+                    </select>
+                </div>
+                <div class=field>
+                    <input type="radio" id="genz" name="age-group" value="GenZ">
+                    <label for="genz">GenZ</label><br>
+                    <input type="radio" id="millenial" name="age-group" value="Millenial">
+                    <label for="millenial">Millenial</label><br>
+                    <input type="radio" id="genx" name="age-group" value="GenX">
+                    <label for="genx">GenX</label><br>
+                    <input type="radio" id="boomer" name="age-group" value="Boomer">
+                    <label for="boomer">Boomer</label>
+                </div>
+                <div class=field>
+                    <label for="travelled">Recent Foreign Travel?</label>
+                    <input type="checkbox" id="travelled" value=false />
+                </div>
+                <div class=field>
+                    <label for="direct-contact">Have you had contact with anybody known to be positive for COVID-19?</label>
+                    <input type="checkbox" id="direct-contact" value=false />
+                </div>
+                <div class=field>
+                    <label for="additional-info">Please provide any additional information that you may deem important</label><br />
+                    <textarea id="additional-info" rows="5" class="textarea-input"></textarea><br />
+                </div>
+                <div class=field>
+                    <input type="submit" id="submit" value="Click here to submit" />
+                </div>                
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; Greg Fullard 2020</p>
+        </footer>
     </body>
 
 </html>
