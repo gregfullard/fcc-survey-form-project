@@ -30,30 +30,33 @@
                     </div>
                     <div class=field>
                         <label id="dropdown-label" for="dropdown" >What is the best category for your job?</label>
-                        <select id="dropdown">
+                        <select id="dropdown" class="dropdown-input">
                             <option value="medical">Medical</option>
                             <option value="technology">Technology</option>
                             <option value="admin">Administration</option>
                             <option value="sales">Sales</option>
                         </select>
                     </div>
-                    <div class=field>
-                        <input type="radio" id="genz" name="age-group" value="GenZ">
-                        <label for="genz">GenZ</label><br>
-                        <input type="radio" id="millenial" name="age-group" value="Millenial">
-                        <label for="millenial">Millenial</label><br>
-                        <input type="radio" id="genx" name="age-group" value="GenX">
-                        <label for="genx">GenX</label><br>
-                        <input type="radio" id="boomer" name="age-group" value="Boomer">
-                        <label for="boomer">Boomer</label>
+                    <div class="field">
+                        <p class="radio-label">Select your age group category</p>
+                        <div class="radio-group">
+                            <input type="radio" id="genz" name="age-group" value="GenZ">
+                            <label for="genz">GenZ</label><br>
+                            <input type="radio" id="millenial" name="age-group" value="Millenial">
+                            <label for="millenial">Millenial</label><br>
+                            <input type="radio" id="genx" name="age-group" value="GenX">
+                            <label for="genx">GenX</label><br>
+                            <input type="radio" id="boomer" name="age-group" value="Boomer">
+                            <label for="boomer">Boomer</label>
+                        </div>
                     </div>
                     <div class=field>
-                        <label for="travelled">Recent Foreign Travel?</label>
                         <input type="checkbox" id="travelled" value=false />
+                        <label for="travelled">Recent Foreign Travel (Within the last 2 months)?</label>
                     </div>
                     <div class=field>
-                        <label for="direct-contact">Have you had contact with anybody known to be positive for COVID-19?</label>
                         <input type="checkbox" id="direct-contact" value=false />
+                        <label for="direct-contact">Have you had contact with anybody known to be positive for COVID-19?</label>
                     </div>
                     <div class=field>
                         <label for="additional-info">Please provide any additional information that you may deem important</label><br />

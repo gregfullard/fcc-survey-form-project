@@ -70,6 +70,16 @@ main {
     width: calc(100% - 1.2em);
 }
 
+.dropdown-input {
+    display: block;
+    border: 1px solid #aaaaaa88;
+    border-radius: 4px;
+    padding: .5em;
+    margin-right: 0;
+    font-size: 1em;
+    width: calc(100% - 1.2em);
+}
+
 .textarea-input {
     display: block;
     border: 1px solid #aaaaaa88;
@@ -82,4 +92,28 @@ main {
 .field label {
     opacity: 0.5;
     font-size: 0.8em;
+}
+
+.radio-label {
+    opacity: 0.5;
+    font-size: 0.8em;
+}
+
+.radio-group {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: .5em;
+}
+
+#submit {
+    flex: 1;
+    margin: 8px;
+    min-width: 150px;
+    background-color: #B3D2B2;
+    box-shadow: 1px 1px 5px lightgray;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
 }
