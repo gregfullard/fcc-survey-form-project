@@ -92,17 +92,35 @@ main {
 .field label {
     opacity: 0.5;
     font-size: 0.8em;
+    padding-left: 0.5em;
 }
 
 .radio-label {
     opacity: 0.5;
     font-size: 0.8em;
+    padding-left: 0.5em;
+    margin-bottom: 0;
 }
 
 .radio-group {
     border: 1px solid lightgrey;
     border-radius: 4px;
     padding: .5em;
+}
+
+.questions-label {
+    opacity: 0.5;
+    font-size: 0.8em;
+    padding-left: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.questions-group {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    padding: 0 .5em 0 .5em;
+    margin: 0 .2em 1em .2em;
 }
 
 #submit {

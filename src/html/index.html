@@ -50,13 +50,19 @@
                             <label for="boomer">Boomer</label>
                         </div>
                     </div>
-                    <div class=field>
-                        <input type="checkbox" id="travelled" value=false />
-                        <label for="travelled">Recent Foreign Travel (Within the last 2 months)?</label>
-                    </div>
-                    <div class=field>
-                        <input type="checkbox" id="direct-contact" value=false />
-                        <label for="direct-contact">Have you had contact with anybody known to be positive for COVID-19?</label>
+                    <div class="questions">
+                        <p class="questions-label">Please answer the questions below as accurately as possible:</p>
+                        <div class="questions-group">
+                            <div class=field>
+                                <input type="checkbox" id="travelled" value=false />
+                                <label for="travelled">Recent Foreign Travel (Within the last 2 months)?</label>
+                            </div>
+                            <div class=field>
+                                <input type="checkbox" id="direct-contact" value=false />
+                                <label for="direct-contact">Have you had contact with anybody known to be positive for COVID-19?</label>
+                            </div>
+                        </div>
+
                     </div>
                     <div class=field>
                         <label for="additional-info">Please provide any additional information that you may deem important</label><br />
@@ -64,7 +70,8 @@
                     </div>
                     <div class=field>
                         <input type="submit" id="submit" value="Click here to submit" />
-                    </div>                
+                    </div>  
+
                 </form>
             </section>
             <section class="media-section">
